@@ -1,0 +1,192 @@
+:root{
+    --rice-blue: #00205B;
+    --rice-gray: #7C7E7F;
+    --bright-blue: #9FDDF9;
+    --light-gray: #E0E2E6;
+    --dark-gray: #44474F;
+    --midnight-blue: #13133E;
+    --bright-green: #A5C151;
+    --grass-green: #359245;
+    --rich-blue: #0A509E;
+    --brick-red: #C04829;
+    --warm-yellow: #E9A139;
+    --burgundy: #68132E;
+    --sequoia-green: #007354;
+    --dark-green: #32343e;
+    --grey-green: #404c54;
+    --green-iris: #446b6a;
+    --green-hills: #478d73;
+    --green-knoll: #5ba95d;
+  }
+  
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-Bold.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Rice';
+    src: url('fonts/EnglishTowne.ttf');
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-var(--rice-blue)Italic.woff2') format('woff2'),
+        url('fonts/SFProDisplay-var(--rice-blue)Italic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-HeavyItalic.woff2') format('woff2'),
+        url('fonts/SFProDisplay-HeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-ThinItalic.woff2') format('woff2'),
+        url('fonts/SFProDisplay-ThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-LightItalic.woff2') format('woff2'),
+        url('fonts/SFProDisplay-LightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-Regular.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-UltralightItalic.woff2') format('woff2'),
+        url('fonts/SFProDisplay-UltralightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2'),
+        url('fonts/SFProDisplay-SemiboldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url('fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('fonts/SFProDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  body{
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-style: normal;
+    color: var(--dark-green);
+  }
+
+  #summary_stats{
+    font-size: 18pt;
+    margin-top: 50pt;
+  }
+
+  /* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--sequoia-green);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    border-right: solid;
+    border-color: var(--dark-green);
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: var(--light-gray);
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: var(--green-knoll);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+    background-color: var(--grey-green);
+    color: white;
+  }
+
+  #summary_table{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-spacing: 20px 0;
+  }
+
+  #summary_table th{
+    font-weight: normal;
+  }
+
+  .subpage_navbar{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    font-size: 18pt;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid;
+    padding-bottom: 20px;
+    border-color: var(--dark-green);
+  }
+
+  .active_subpage{
+    color: var(--light-gray);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--grass-green);
+    padding: 15px 5vw;
+  }
+
+  .inactive_subpage{
+    color: var(--grey-green);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 5vw;
+  }
