@@ -114,8 +114,8 @@
   }
 
   #summary_stats{
-    font-size: 18pt;
-    margin-top: 50pt;
+    font-size: 14pt;
+    margin-top: 20px;
   }
 
   /* The side navigation menu */
@@ -153,6 +153,7 @@
 
   #summary_table{
     text-align: left;
+    font-size: 14pt;
     display: flex;
     align-items: center;
     border-spacing: 20px 0;
@@ -169,24 +170,25 @@
     justify-content: center;
     justify-items: center;
     font-size: 18pt;
-    margin-top: 20px;
+    margin-left: 200px;
     text-decoration: none;
     border-bottom: solid;
-    padding-bottom: 20px;
     border-color: var(--dark-green);
   }
 
   .active_subpage{
-    color: var(--light-gray);
+    color: var(--sequoia-green);
     text-decoration: none;
     font-weight: bold;
-    background-color: var(--grass-green);
-    padding: 15px 5vw;
+    /* background-color: var(--grass-green); */
+    padding: 10px 5vw;
+    border-bottom: solid 10px;
+    border-color: var(--sequoia-green);
   }
 
   .inactive_subpage{
-    color: var(--grey-green);
+    color: var(--dark-green);
     text-decoration: none;
     font-weight: bold;
-    padding: 15px 5vw;
+    padding: 10px 5vw;
   }
