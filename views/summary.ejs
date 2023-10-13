@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title></title>
+            <title>Summary</title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="css/style.css">
@@ -14,16 +14,16 @@
         <body style="margin: 0;">
             <!-- The sidebar -->
             <div class="sidebar">
-                <a class="menu_bar">Menu</a>
+                <div class="menu_bar">Menu</div>
                 <a class="active" href="/">Home</a>
                 <a href="/">Search</a>
             </div>
 
             <div style="display: flex; padding: 10pt; background-color: var(--sequoia-green); align-items: center; justify-content: center; margin-left: 200px;">
-                <div style="text-align: left; font-family: 'Cairo';color: var(--light-gray); font-size: 20pt; font-weight: bold">
+                <div class="oikos_title">
                     OIKOS GARDEN
                 </div>
-                <div style="text-align: center; color: var(--light-gray); margin-left: 20%; font-size: 16pt;">
+                <div class="opp_detail_title">
                     Opportunity Details
                 </div>
                 <div style="text-align: center; color: var(--light-gray); margin-left: 20%; font-size: 16pt;">
@@ -33,7 +33,7 @@
                     <div style="display: flex; border-radius: 50%; width: 50px; height: 50px; background-color: var(--light-gray); overflow: hidden; align-items: center; justify-items: center; justify-content: center;">
                         <img style="height: 50pt; width: 50pt;  align-items: center; justify-items: center;" src="uploads/<%= user_account.profile_pic %>">
                     </div>
-                    <div style="text-align: center; color: var(--light-gray); font-size: 16pt; margin-left: 10pt;">
+                    <div class="sign_out_btn">
                         SIGN OUT
                     </div>
                 </div>
@@ -64,11 +64,14 @@
                     <span style="font-size: 18pt;"><b><%= m_value %></b></span><br>
                     M Value
                 </div>
+                <div class="offer_btn">
+                OFFER
+            </div>
             </div>
 
             <div class="subpage_navbar">
                 <a class="active_subpage" href="/">Summary</a>
-                <a class="inactive_subpage" href="/">Valuation</a>
+                <a class="inactive_subpage" href="/valuation">Valuation</a>
                 <a class="inactive_subpage" href="/">Comps</a>
                 <a class="inactive_subpage" href="/">Financials</a>                
             </div>

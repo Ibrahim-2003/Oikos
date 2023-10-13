@@ -28,6 +28,11 @@
     font-style: normal;
     font-display: swap;
   }
+
+  @font-face{
+    font-family: 'Righteous';
+    src: url('fonts/Righteous-Regular.ttf');
+  }
   
   @font-face {
     font-family: 'Rice';
@@ -138,6 +143,14 @@
     padding: 16px;
     text-decoration: none;
   }
+
+  .menu_bar{
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
+  }
   
   /* Active/current link */
   .sidebar a.active {
@@ -176,6 +189,36 @@
     border-color: var(--dark-green);
   }
 
+  .oikos_title{
+    text-align: left;
+    font-family: 'Righteous';
+    color: var(--light-gray);
+    font-size: 20pt;
+    font-weight: bold;
+  }
+
+  .opp_detail_title{
+    text-align: center;
+    color: var(--light-gray);
+    margin-left: 20%;
+    font-size: 16pt;
+  }
+
+  .sign_out_btn{
+    text-align: center;
+    color: var(--light-gray);
+    font-size: 16pt;
+    margin-left: 10pt;
+    font-family: 'Righteous';
+    font-weight: bold;
+    transition: opacity 0.3s;
+  }
+
+  .sign_out_btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
   .active_subpage{
     color: var(--sequoia-green);
     text-decoration: none;
@@ -191,4 +234,94 @@
     text-decoration: none;
     font-weight: bold;
     padding: 10px 5vw;
+    border: none;
+    transition: border-width 0.1s;
+    border-width: 0px;
+  }
+
+  .inactive_subpage:hover{
+    border-bottom: solid;
+    border-width: 10px;
+    border-color: var(--green-knoll);
+  }
+
+  .offer_btn{
+    display: flex;
+    margin-left: 170px;
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: white;
+    background-color: var(--warm-yellow);
+    color: var(--dark-green);
+    font-family: "Righteous";
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .offer_btn:hover{
+    cursor: pointer;
+    border-color: var(--dark-green);
+  }
+
+  .save_btn{
+    font-family: "Righteous";
+    color: var(--dark-green);
+    margin: 0px 10px;
+    margin-left: 50px;
+    transition: opacity 0.3s;
+  }
+
+  .save_btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .visit_btn{
+    font-family: "Righteous";
+    color: var(--dark-green);
+    margin: 0px 10px;
+    transition: opacity 0.3s;
+  }
+
+  .visit_btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .reject_btn{
+    font-family: "Righteous";
+    color: var(--dark-green);
+    margin: 0px 10px;
+    transition: opacity 0.3s;
+  }
+
+  .reject_btn:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  .offer_btn_val{
+    display: flex;
+    margin-left: 20px;
+    width: 75px;
+    height: 35px;
+    border-radius: 10px;
+    border: solid 2px;
+    border-color: white;
+    background-color: var(--warm-yellow);
+    color: var(--dark-green);
+    font-family: "Righteous";
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .offer_btn_val:hover{
+    cursor: pointer;
+    border-color: var(--dark-green);
   }

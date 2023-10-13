@@ -120,10 +120,24 @@ function get_user(input){
     return result
 }
 
+function get_valuation(input){
+    input = "TEST";
+    result = {rental_value: "$1,500",
+            opt_rent: "$1,500",
+            mod_rent: "$1,500",
+            cons_rent: "$1,500",
+            market_value: "1,500",
+            opt_market: "$1,500",
+            mod_market: "$1,500",
+            cons_market: "1,500",
+            coords: [30.2529321, -97.7375292, 14]}
+    return result
+}
+
 app.get('/', async function(req, res) {
     summary = get_summary("TEST");
     user_account = get_user("TEST");
-    res.render('home.ejs', {stage: summary.stage,
+    res.render('summary.ejs', {stage: summary.stage,
                             list_source: summary.list_source,
                             list_type: summary.list_type,
                             prop_type: summary.prop_type,
@@ -150,6 +164,31 @@ app.get('/', async function(req, res) {
                             m_value: summary.m_value,
                             prop_image: summary.prop_image,
                             user_account: user_account});
+})
+
+app.get('/valuation', async function(req, res) {
+    summary = get_summary("TEST");
+    user_account = get_user("TEST");
+    valuation = get_valuation("TEST");
+    res.render('valuation.ejs', {address: summary.address,
+                            city: summary.city,
+                            state: summary.state,
+                            zip: summary.zip,
+                            list_price: summary.list_price,
+                            cap_rate: summary.cap_rate,
+                            r_value: summary.r_value,
+                            m_value: summary.m_value,
+                            prop_image: summary.prop_image,
+                            user_account: user_account,
+                            rental_value: valuation.rental_value,
+                            opt_rent: valuation.opt_rent,
+                            mod_rent: valuation.mod_rent,
+                            cons_rent: valuation.cons_rent,
+                            market_value: valuation.market_value,
+                            opt_market: valuation.opt_market,
+                            mod_market: valuation.mod_market,
+                            cons_market: valuation.cons_market,
+                            coords: valuation.coords});
 })
 
 app.listen(port);
