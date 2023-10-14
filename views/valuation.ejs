@@ -164,19 +164,19 @@
             </div>
 
             <div style="display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 50px; margin-left: 200px;">
-                <div style="margin: 0px 20px; font-weight: bold; border-bottom: solid 5px; border-color: white;">
+                <div class="clickable inactive_map_btn">
                     RENTAL
                 </div>
-                <div style="margin: 0px 20px; border-bottom: solid 5px; border-color: var(--sequoia-green); font-weight: bold; color: var(--sequoia-green);">
+                <div class="clickable" style="margin: 0px 20px; border-bottom: solid 5px; border-color: var(--sequoia-green); font-weight: bold; color: var(--sequoia-green);">
                     MARKET
                 </div>
-                <div style="margin: 0px 20px; font-weight: bold; border-bottom: solid 5px; border-color: white;">
+                <div class="clickable inactive_map_btn">
                     INSIGHTS
                 </div>
             </div>
             
             <div style="margin-top: 20px; margin-left: 230px; margin-right: 30px; justify-self: center; align-self: center; align-items: center; align-content: center; justify-content: center;">
-                <div id="map" style="border: 1px solid var(--sequoia-green); width: 100%; height: 450px;"></div>
+                <div id="map" style="border: 1px solid var(--sequoia-green); width: 100%; height: 40vh;"></div>
             </div>
             <p id="coordinates" style="display: none;"><%=coords[0]%>, <%=coords[1]%>, <%=coords[2]%></p>
 

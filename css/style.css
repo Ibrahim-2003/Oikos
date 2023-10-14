@@ -325,3 +325,19 @@
     cursor: pointer;
     border-color: var(--dark-green);
   }
+
+  .clickable:hover{
+    cursor: pointer;
+  }
+
+  .inactive_map_btn{
+    margin: 0px 20px;
+    font-weight: bold;
+    border-bottom: solid 5px;
+    border-color: white;
+    transition: border-color 0.3s;
+  }
+
+  .inactive_map_btn:hover{
+    border-color: var(--green-knoll);
+  }
