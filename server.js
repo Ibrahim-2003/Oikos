@@ -40,7 +40,7 @@ connection.connect(function(error){
 
 
 const app = express();
-const port = 4800;
+const port = 5400;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 

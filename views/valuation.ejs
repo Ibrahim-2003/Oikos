@@ -183,7 +183,7 @@
             <script src = "http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
               <script>
                 const ele = document.getElementById("coordinates");
-                const coords = ele.innerHTML.split(",")
+                const coords = ele.innerText.split(",")
                  // Creating map options
                  var mapOptions = {
                     center: [parseFloat(coords[0]), parseFloat(coords[1])],
