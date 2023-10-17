@@ -120,6 +120,22 @@ function get_user(input){
     return result
 }
 
+function get_financials(input){
+    input = "TEST";
+    result = {yld: 0.0989,
+            cash_on_cash: 0.0698,
+            irr: 0.0698,
+            appreciation: 0.0526,
+            total_return: 150281,
+            beds: 4,
+            baths: 3,
+            sqft: 1722,
+            dom: 67,
+            calc_offer: "$990K",
+            win_prob: 0.99}
+    return result;
+}
+
 function get_valuation(input){
     input = "TEST";
     result = {rental_value: "$1,500",
@@ -189,6 +205,34 @@ app.get('/valuation', async function(req, res) {
                             mod_market: valuation.mod_market,
                             cons_market: valuation.cons_market,
                             coords: valuation.coords});
+})
+
+app.get('/financials', async function(req, res){
+    summary = get_summary("TEST");
+    user_account = get_user("TEST");
+    financials = get_financials("TEST");
+    res.render('financials.ejs', {address: summary.address,
+                            city: summary.city,
+                            state: summary.state,
+                            zip: summary.zip,
+                            list_price: summary.list_price,
+                            cap_rate: summary.cap_rate,
+                            r_value: summary.r_value,
+                            m_value: summary.m_value,
+                            prop_image: summary.prop_image,
+                            user_account: user_account,
+                            yld: financials.yld,
+                            cash_on_cash: financials.cash_on_cash,
+                            irr: financials.irr,
+                            appreciation: financials.appreciation,
+                            total_return: financials.total_return,
+                            beds: financials.beds,
+                            baths: financials.baths,
+                            sqft: financials.sqft,
+                            list_source: summary.list_source,
+                            dom: financials.dom,
+                            calc_offer: financials.calc_offer,
+                            win_prob: financials.win_prob});
 })
 
 app.listen(port);

@@ -341,3 +341,16 @@
   .inactive_map_btn:hover{
     border-color: var(--green-knoll);
   }
+
+  .financials_stats_titles{
+    color: var(--grey-green);
+    text-align: center;
+    margin: 0px 4.5%;
+    font-weight: bold;
+  }
+
+  .financials_stats{
+    color: var(--dark-green);
+    padding: 5px;
+    text-align: center;
+  }

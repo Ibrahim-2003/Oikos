@@ -45,8 +45,8 @@
                     <embed src="uploads/<%= prop_image %>" width="90pt" height="50pt" style="margin: auto;"/>
                 </div>
                 <div style="text-align: center; padding-left: 10pt">
-                    <span style="font-size: 18pt;"><b>123 Sky St.</b></span><br>
-                    Houston, TX 77001
+                    <span style="font-size: 18pt;"><b><%= address %></b></span><br>
+                    <%= city %>, <%= state %> <%= zip %>
                 </div>
                 <div style="text-align: center; padding-left: 70pt">
                     <span style="font-size: 18pt;color: var(--green-hills)"><b><%= list_price %></b></span><br>
@@ -64,109 +64,67 @@
                     <span style="font-size: 18pt;"><b><%= m_value %></b></span><br>
                     M Value
                 </div>
-                <div class="offer_btn">
-                OFFER
-            </div>
+                <div class="reject_btn" style="margin-left: 100px;">
+                    REJECT
+                </div>
+                <div class="offer_btn_val">
+                    OFFER
+                </div>
             </div>
 
             <div class="subpage_navbar">
-                <a class="active_subpage" href="/">Summary</a>
+                <a class="inactive_subpage" href="/">Summary</a>
                 <a class="inactive_subpage" href="/valuation">Valuation</a>
                 <a class="inactive_subpage" href="/">Comps</a>
-                <a class="inactive_subpage" href="/financials">Financials</a>                
+                <a class="active_subpage" href="/">Financials</a>                
+            </div>
+
+            <div style="display: flex; margin: 20px 0px; margin-left: 200px;">
+                <div class="financials_stats_titles">
+                    YIELD
+                    <div class="financials_stats">
+                        <%= 100*yld %>%
+                    </div>
+                </div>
+                <div class="financials_stats_titles">
+                    CAP RATE
+                    <div class="financials_stats">
+                        <%= 100*cap_rate %>%
+                    </div>
+                </div>
+                <div class="financials_stats_titles">
+                    CASH ON CASH
+                    <div class="financials_stats">
+                        <%= 100*cash_on_cash %>%
+                    </div>
+                </div>
+                <div class="financials_stats_titles">
+                    IRR
+                    <div class="financials_stats">
+                        <%= 100*irr %>%
+                    </div>
+                </div>
+                <div class="financials_stats_titles">
+                    APPRECIATION
+                    <div class="financials_stats">
+                        <%= 100*appreciation %>%
+                    </div>
+                </div>
+                <div class="financials_stats_titles">
+                    TOTAL RETURN
+                    <div class="financials_stats">
+                        $<%= total_return.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); %>
+                    </div>
+                </div>
             </div>
 
             <div style="display: flex; align-items: center; justify-content: center; margin-left: 200px;">
                 <div style="display: flex; align-items: center; justify-content: center;">
                     <embed src="uploads/<%= prop_image %>" width="700px" height="100%" style="margin: auto;"/>
                 </div>
-                <div id="summary_stats">
-                    <div style="margin-bottom: 15pt; text-align: center">
-                        <b>Summary</b>
-                    </div>
-                    
-                    <table id="summary_table">
-                        <tr>
-                            <th>Stage</th>
-                            <th><%= stage %></th>
-                        </tr>
-                        <tr>
-                            <th>Listing Source</th>
-                            <th><%= list_source %></th>
-                        </tr>
-                        <tr>
-                            <th>Listing Type</th>
-                            <th><%= list_type %></th>
-                        </tr>
-                        <tr>
-                            <th>Property Type</th>
-                            <th><%= prop_type %></th>
-                        </tr>
-                        <tr>
-                            <th>ID (UI)</th>
-                            <th><%= id %></th>
-                        </tr>
-                        <tr>
-                            <th>Community</th>
-                            <th><%= community %></th>
-                        </tr>
-                        <tr>
-                            <th>Lot Size<br></th>
-                            <th><%= lot_size %></th>
-                        </tr>
-                        <tr>
-                            <th>Style</th>
-                            <th><%= style %></th>
-                        </tr>
-                        <tr>
-                            <th>Stories</th>
-                            <th><%= stories %></th>
-                        </tr>
-                        <tr>
-                            <th>Garage</th>
-                            <th><%= garage %></th>
-                        </tr>
-                        <tr>
-                            <th>Basement</th>
-                            <th><%= basement %></th>
-                        </tr>
-                        <tr>
-                            <th>School Score</th>
-                            <th><%= school_score %></th>
-                        </tr>
-                        <tr>
-                            <th>Near Commercial</th>
-                            <th><% if(near_commercial){ %>
-                                Yes
-                            <% }else{ %>
-                                No
-                            <% } %></th>
-                        </tr>
-                        <tr>
-                            <th>Flood Zone</th>
-                            <th><% if(flood_zone){ %>
-                                Yes
-                            <% }else{ %>
-                                No
-                            <% } %></th>
-                        </tr>
-                        <tr>
-                            <th>Private Pool</th>
-                            <th><% if(private_pool){ %>
-                                Yes
-                            <% }else{ %>
-                                No
-                            <% } %></th>
-                        </tr>
-                        <tr>
-                            <th>County</th>
-                            <th><%= county %></th>
-                        </tr>
-                        <tr>
-                            <th>Tax ID</th>
-                            <th><%= tax_id %></th>
-                        </tr>
-                    </table>
+                <div style="display: flex; align-items: center;">
+                    <%= address %></br>
+                    <%= beds %>bd | <%= baths %>ba | <%= sqft %> sq ft | <%= list_source %> | <%= dom %> DOM
                 </div>
             </div>
             
