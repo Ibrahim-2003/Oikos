@@ -17,6 +17,7 @@
     --green-iris: #446b6a;
     --green-hills: #478d73;
     --green-knoll: #5ba95d;
+    --blue-ghost: #646E74;
   }
   
   
@@ -343,14 +344,15 @@
   }
 
   .financials_stats_titles{
-    color: var(--grey-green);
+    color: var(--dark-green);
     text-align: center;
     margin: 0px 4.5%;
     font-weight: bold;
   }
 
   .financials_stats{
-    color: var(--dark-green);
+    color: var(--blue-ghost);
     padding: 5px;
     text-align: center;
+    margin-bottom: 40px;
   }
