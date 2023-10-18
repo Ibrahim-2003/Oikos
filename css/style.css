@@ -190,6 +190,7 @@
     text-decoration: none;
     border-bottom: solid;
     border-color: var(--dark-green);
+    z-index: -1;
   }
 
   .oikos_title{
@@ -401,12 +402,33 @@
   .comps_table tr:nth-child(even) {
     background-color: #f2f2f2;
   }
+  .comps_table tr:nth-child(odd) {
+    background-color: white;
+  }
 
   .comp_table_container{
+    margin: 55px 0px;
     display: flex;
-    width: 99%;
+    width: 100%;
     overflow: auto;
-    margin-top: 30px;
     height: 250px;
     box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  .comps_cpa{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 70px;
+  }
+
+  .cpa_table{
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cpa_table td{
+    padding: 5px 5px;
   }

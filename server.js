@@ -172,6 +172,7 @@ function get_comps(input){
                 carport: false,
                 slab: true,
                 basement: false,
+                sqft: 2500,
                 lot_size: 0.25, // acres
                 pool: false,
                 built: 2005,
@@ -204,6 +205,7 @@ function get_comps(input){
         carport: false,
         slab: true,
         basement: false,
+        sqft: 2500,
         lot_size: 0.25, // acres
         pool: false,
         built: 2005,
@@ -236,6 +238,7 @@ function get_comps(input){
         carport: false,
         slab: true,
         basement: false,
+        sqft: 2500,
         lot_size: 0.25, // acres
         pool: false,
         built: 2005,
@@ -268,6 +271,7 @@ function get_comps(input){
             carport: false,
             slab: true,
             basement: false,
+            sqft: 2500,
             lot_size: 0.25, // acres
             pool: false,
             built: 2005,
@@ -300,6 +304,7 @@ function get_comps(input){
                 carport: false,
                 slab: true,
                 basement: false,
+                sqft: 2500,
                 lot_size: 0.25, // acres
                 pool: false,
                 built: 2005,
@@ -332,6 +337,7 @@ function get_comps(input){
                     carport: false,
                     slab: true,
                     basement: false,
+                    sqft: 2500,
                     lot_size: 0.25, // acres
                     pool: false,
                     built: 2005,
@@ -364,6 +370,7 @@ function get_comps(input){
                         carport: false,
                         slab: true,
                         basement: false,
+                        sqft: 2500,
                         lot_size: 0.25, // acres
                         pool: false,
                         built: 2005,

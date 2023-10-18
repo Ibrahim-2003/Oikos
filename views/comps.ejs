@@ -84,7 +84,129 @@
                 <a class="active_subpage" href="/comps">Comps</a>
                 <a class="inactive_subpage" href="/financials">Financials</a>                
             </div>
-            <div style="display: flex; margin-left: 200px; align-items: center; justify-content: center;">
+            <div style="display: flex; margin-left: 200px;">
+                <div class="comps_cpa">
+                    <div style="font-weight: bold; color: white; background-color: red; text-align: center; padding: 5px 0px; width: 300px; margin: 0 auto;">
+                        Closed
+                    </div>
+                    <table class="cpa_table">
+                        <tr>
+                            <td>
+                                # / DOM
+                            </td>
+                            <td>
+                                Low
+                            </td>
+                            <td>
+                                Medium
+                            </td>
+                            <td>
+                                High
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">
+                                91</br>
+                                <span style="font-size: 10px; font-weight: normal;">34 DAYS</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                126,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">117.30</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                413,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">171.25</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                1,285,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">277.02</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="comps_cpa">
+                    <div style="font-weight: bold; color: white; background-color: var(--warm-yellow); text-align: center; padding: 5px 0px; width: 300px; margin: 0 auto;">
+                        Pending
+                    </div>
+                    <table class="cpa_table">
+                        <tr>
+                            <td>
+                                # / DOM
+                            </td>
+                            <td>
+                                Low
+                            </td>
+                            <td>
+                                Medium
+                            </td>
+                            <td>
+                                High
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">
+                                91</br>
+                                <span style="font-size: 10px; font-weight: normal;">34 DAYS</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                126,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">117.30</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                413,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">171.25</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                1,285,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">277.02</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="comps_cpa">
+                    <div style="font-weight: bold; color: white; background-color: var(--green-hills); text-align: center; padding: 5px 0px; width: 300px; margin: 0 auto;">
+                        Active
+                    </div>
+                    <table class="cpa_table">
+                        <tr>
+                            <td>
+                                # / DOM
+                            </td>
+                            <td>
+                                Low
+                            </td>
+                            <td>
+                                Medium
+                            </td>
+                            <td>
+                                High
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold;">
+                                91</br>
+                                <span style="font-size: 10px; font-weight: normal;">34 DAYS</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                126,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">117.30</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                413,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">171.25</span>
+                            </td>
+                            <td style="font-weight: bold;">
+                                1,285,000</br>
+                                <span style="font-size: 10px; font-weight: normal;">277.02</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div style="display: flex; margin-left: 205px; align-items: center; justify-content: center;">
                 <div class="comp_table_container">
                     <table class="comps_table" id="comp_table">
                         <thead>
@@ -149,7 +271,7 @@
                                 <td><%= property.psf %></td>
                                 <td><%= property.beds %></td>
                                 <td><%= property.baths %></td>
-                                <td><%= property.levels %></td>
+                                <td><%= property.level %></td>
                                 <td><%= property.garage %></td>
                                 <% if (property.carport){ %>
                                     <td>Y</td>
