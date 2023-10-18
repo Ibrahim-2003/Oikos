@@ -142,10 +142,10 @@ function get_valuation(input){
             opt_rent: "$1,500",
             mod_rent: "$1,500",
             cons_rent: "$1,500",
-            market_value: "1,500",
+            market_value: "$1,500",
             opt_market: "$1,500",
             mod_market: "$1,500",
-            cons_market: "1,500",
+            cons_market: "$1,500",
             coords: [30.2529321, -97.7375292, 14]}
     return result
 }

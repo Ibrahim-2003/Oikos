@@ -124,13 +124,38 @@
                 </div>
             </div>
 
-            <div style="display: flex; align-items: center; justify-content: center; margin-left: 200px;">
+            <div style="display: flex; align-items: center; justify-content: center; margin-left: 150px;">
                 <div style="display: flex; align-items: center; justify-content: center;">
-                    <embed src="uploads/<%= prop_image %>" width="700px" height="100%" style="margin: auto;"/>
+                    <embed src="uploads/<%= prop_image %>" width="400px" height="100%" style="margin: auto;"/>
                 </div>
-                <div style="display: flex; align-items: center;">
-                    <%= address %></br>
-                    <%= beds %>bd | <%= baths %>ba | <%= sqft %> sq ft | <%= list_source %> | <%= dom %> DOM
+                <div style="display: flex; color: var(--blue-ghost); font-weight: bold; margin-left: 30px; align-self: flex-start;">
+                    <%= address %></br></br>
+                    <%= beds %> bd | <%= baths %> ba | <%= sqft %> sq ft | <%= list_source %> | <%= dom %> DOM
+                </div>
+                <div style="display: grid; grid-template-columns: auto auto; grid-template-rows: auto auto auto;
+                            align-items: center; text-align: left; margin-left: 10%; font-weight: bold;
+                            row-gap: 20px; column-gap: 40px;">
+                    
+                    <div>
+                        Calculated Offer
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <%= calc_offer %>
+                    </div>
+
+                    <div>
+                        List
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <%= list_price %>
+                    </div>
+                    
+                    <div>
+                        Winning Probability
+                    </div>
+                    <div style="margin-left: 30px;">
+                        <%= win_prob*100 %>%
+                    </div>
                 </div>
             </div>
             
