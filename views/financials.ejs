@@ -3,7 +3,7 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Summary</title>
+            <title>Oikos - <%= address %></title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="css/style.css">
@@ -26,7 +26,7 @@
                 <div class="opp_detail_title">
                     Opportunity Details
                 </div>
-                <div style="text-align: center; color: var(--light-gray); margin-left: 20%; font-size: 16pt;">
+                <div style="text-align: center; color: white; margin-left: 20%; font-size: 16pt;">
                     Austin v
                 </div>
                 <div style="display: flex; margin-left: 5%; align-items: center; justify-content: center;">
@@ -64,7 +64,13 @@
                     <span style="font-size: 18pt;"><b><%= m_value %></b></span><br>
                     M Value
                 </div>
-                <div class="reject_btn" style="margin-left: 100px;">
+                <div class="save_btn">
+                    SAVE
+                </div>
+                <div class="visit_btn">
+                    VISIT
+                </div>
+                <div class="reject_btn">
                     REJECT
                 </div>
                 <div class="offer_btn_val">
@@ -75,8 +81,8 @@
             <div class="subpage_navbar">
                 <a class="inactive_subpage" href="/">Summary</a>
                 <a class="inactive_subpage" href="/valuation">Valuation</a>
-                <a class="inactive_subpage" href="/">Comps</a>
-                <a class="active_subpage" href="/">Financials</a>                
+                <a class="inactive_subpage" href="/comps">Comps</a>
+                <a class="active_subpage" href="/financials">Financials</a>                
             </div>
 
             <div style="display: flex; margin: 20px 0px; margin-left: 200px;">

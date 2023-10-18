@@ -115,6 +115,8 @@
     font-family: 'SF Pro Display';
     font-weight: 500;
     font-style: normal;
+    height: 100vh;
+    overflow: hidden;
     color: var(--dark-green);
   }
 
@@ -192,21 +194,21 @@
   .oikos_title{
     text-align: left;
     font-family: 'Righteous';
-    color: var(--light-gray);
+    color: white;
     font-size: 20pt;
     font-weight: bold;
   }
 
   .opp_detail_title{
     text-align: center;
-    color: var(--light-gray);
+    color: white;
     margin-left: 20%;
     font-size: 16pt;
   }
 
   .sign_out_btn{
     text-align: center;
-    color: var(--light-gray);
+    color: white;
     font-size: 16pt;
     margin-left: 10pt;
     font-family: 'Righteous';
@@ -353,4 +355,57 @@
     color: var(--dark-green);
     padding: 5px;
     text-align: center;
+  }
+
+  .comps_table{
+    border: 0px 1px solid var(--dark-green);
+    border-collapse: collapse;
+    white-space:nowrap;
+    padding: 10px;
+  }
+
+  .comps_table td{
+    border: 0px 1px solid var(--dark-green);
+    border-collapse: collapse;
+    white-space:nowrap;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .comps_table thead{
+    background-color: white;
+    position: sticky;
+    top: 0; /* Don't forget this, required for the stickiness */
+  }
+
+  .comps_table th::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--dark-green);
+}
+
+  .comps_table th{
+    border: 0px 1px solid var(--dark-green);
+    border-collapse: collapse;
+    white-space:nowrap;
+    padding: 10px;
+    font-size: 14pt;
+    cursor: pointer;
+  }
+
+  .comps_table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  .comp_table_container{
+    display: flex;
+    width: 99%;
+    overflow: auto;
+    margin-top: 30px;
+    height: 250px;
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.3);
   }

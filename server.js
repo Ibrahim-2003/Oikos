@@ -150,6 +150,236 @@ function get_valuation(input){
     return result
 }
 
+function get_comps(input){
+    input = "TEST";
+    property_1 = {rating: 1.00,
+                status: 0, // 0 = closed, 1 = pending, 2 = active
+                date: "04/30/2023",
+                mls_num: 1234567,
+                address: "132 Sky St.",
+                city: "Austin",
+                prop_type: "Single Family Home",
+                subdivision: "Walker Ranch",
+                dom: 65,
+                dtc: 98,
+                list_price: 426000,
+                sale_price: 426000,
+                psf: 147.76,
+                beds: 4,
+                baths: 2,
+                level: 2,
+                garage: 2,
+                carport: false,
+                slab: true,
+                basement: false,
+                lot_size: 0.25, // acres
+                pool: false,
+                built: 2005,
+                hoa: 100,
+                senr: 90,
+                fin1: 1500,
+                fin2: 500,
+                fin3: 0,
+                tot1: 2000,
+                tot2: 500,
+                tot3: 0}
+
+    property_2 = {rating: 0.99,
+        status: 1, // 0 = closed, 1 = pending, 2 = active
+        date: "04/20/2023",
+        mls_num: 2345678,
+        address: "436 Elm St.",
+        city: "Austin",
+        prop_type: "Single Family Home",
+        subdivision: "Heights",
+        dom: 30,
+        dtc: 60,
+        list_price: 300000,
+        sale_price: 285000,
+        psf: 150,
+        beds: 3,
+        baths: 2.5,
+        level: 2,
+        garage: 2,
+        carport: false,
+        slab: true,
+        basement: false,
+        lot_size: 0.25, // acres
+        pool: false,
+        built: 2005,
+        hoa: 100,
+        senr: 90,
+        fin1: 1500,
+        fin2: 500,
+        fin3: 0,
+        tot1: 2000,
+        tot2: 500,
+        tot3: 0}
+
+    property_3 = {rating: 0.94,
+        status: 2, // 0 = closed, 1 = pending, 2 = active
+        date: "04/30/2023",
+        mls_num: 1234567,
+        address: "132 Sky St.",
+        city: "Austin",
+        prop_type: "Single Family Home",
+        subdivision: "Walker Ranch",
+        dom: 65,
+        dtc: 98,
+        list_price: 426000,
+        sale_price: 426000,
+        psf: 147.76,
+        beds: 4,
+        baths: 2,
+        level: 2,
+        garage: 2,
+        carport: false,
+        slab: true,
+        basement: false,
+        lot_size: 0.25, // acres
+        pool: false,
+        built: 2005,
+        hoa: 100,
+        senr: 90,
+        fin1: 1500,
+        fin2: 500,
+        fin3: 0,
+        tot1: 2000,
+        tot2: 500,
+        tot3: 0}
+
+        property_4 = {rating: 0.99,
+            status: 0, // 0 = closed, 1 = pending, 2 = active
+            date: "04/20/2023",
+            mls_num: 2345678,
+            address: "436 Elm St.",
+            city: "Austin",
+            prop_type: "Single Family Home",
+            subdivision: "Heights",
+            dom: 30,
+            dtc: 60,
+            list_price: 300000,
+            sale_price: 285000,
+            psf: 150,
+            beds: 3,
+            baths: 2.5,
+            level: 2,
+            garage: 2,
+            carport: false,
+            slab: true,
+            basement: false,
+            lot_size: 0.25, // acres
+            pool: false,
+            built: 2005,
+            hoa: 100,
+            senr: 90,
+            fin1: 1500,
+            fin2: 500,
+            fin3: 0,
+            tot1: 2000,
+            tot2: 500,
+            tot3: 0}
+
+            property_5 = {rating: 0.99,
+                status: 0, // 0 = closed, 1 = pending, 2 = active
+                date: "04/20/2023",
+                mls_num: 2345678,
+                address: "436 Elm St.",
+                city: "Austin",
+                prop_type: "Single Family Home",
+                subdivision: "Heights",
+                dom: 30,
+                dtc: 60,
+                list_price: 300000,
+                sale_price: 285000,
+                psf: 150,
+                beds: 3,
+                baths: 2.5,
+                level: 2,
+                garage: 2,
+                carport: false,
+                slab: true,
+                basement: false,
+                lot_size: 0.25, // acres
+                pool: false,
+                built: 2005,
+                hoa: 100,
+                senr: 90,
+                fin1: 1500,
+                fin2: 500,
+                fin3: 0,
+                tot1: 2000,
+                tot2: 500,
+                tot3: 0}
+
+                property_6 = {rating: 0.99,
+                    status: 2, // 0 = closed, 1 = pending, 2 = active
+                    date: "04/20/2023",
+                    mls_num: 2345678,
+                    address: "436 Elm St.",
+                    city: "Austin",
+                    prop_type: "Single Family Home",
+                    subdivision: "Heights",
+                    dom: 30,
+                    dtc: 60,
+                    list_price: 300000,
+                    sale_price: 285000,
+                    psf: 150,
+                    beds: 3,
+                    baths: 2.5,
+                    level: 2,
+                    garage: 2,
+                    carport: false,
+                    slab: true,
+                    basement: false,
+                    lot_size: 0.25, // acres
+                    pool: false,
+                    built: 2005,
+                    hoa: 100,
+                    senr: 90,
+                    fin1: 1500,
+                    fin2: 500,
+                    fin3: 0,
+                    tot1: 2000,
+                    tot2: 500,
+                    tot3: 0}
+
+                    property_7 = {rating: 0.92,
+                        status: 2, // 0 = closed, 1 = pending, 2 = active
+                        date: "04/20/2023",
+                        mls_num: 2345678,
+                        address: "436 Elm St.",
+                        city: "Austin",
+                        prop_type: "Single Family Home",
+                        subdivision: "Heights",
+                        dom: 30,
+                        dtc: 60,
+                        list_price: 300000,
+                        sale_price: 285000,
+                        psf: 150,
+                        beds: 3,
+                        baths: 2.5,
+                        level: 2,
+                        garage: 2,
+                        carport: false,
+                        slab: true,
+                        basement: false,
+                        lot_size: 0.25, // acres
+                        pool: false,
+                        built: 2005,
+                        hoa: 100,
+                        senr: 90,
+                        fin1: 1500,
+                        fin2: 500,
+                        fin3: 0,
+                        tot1: 2000,
+                        tot2: 500,
+                        tot3: 0}
+
+    result = [property_1, property_2, property_3, property_4, property_5, property_6, property_7];
+    return result
+}
+
 app.get('/', async function(req, res) {
     summary = get_summary("TEST");
     user_account = get_user("TEST");
@@ -233,6 +463,23 @@ app.get('/financials', async function(req, res){
                             dom: financials.dom,
                             calc_offer: financials.calc_offer,
                             win_prob: financials.win_prob});
+})
+
+app.get('/comps', async function(req, res){
+    summary = get_summary("TEST");
+    user_account = get_user("TEST");
+    comps = get_comps("TEST");
+    res.render('comps.ejs', {address: summary.address,
+                            city: summary.city,
+                            state: summary.state,
+                            zip: summary.zip,
+                            list_price: summary.list_price,
+                            cap_rate: summary.cap_rate,
+                            r_value: summary.r_value,
+                            m_value: summary.m_value,
+                            prop_image: summary.prop_image,
+                            user_account: user_account,
+                            comps: comps});
 })
 
 app.listen(port);
