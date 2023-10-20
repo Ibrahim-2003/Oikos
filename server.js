@@ -328,7 +328,7 @@ function get_comps(input){
                     dom: 30,
                     dtc: 60,
                     list_price: 300000,
-                    sale_price: 285000,
+                    sale_price: 264000,
                     psf: 150,
                     beds: 3,
                     baths: 2.5,
