@@ -239,3 +239,5 @@
     }
     ```
     Note: for css classes, use .class_name and for specific element IDs use #id_name
+
+* Delete Comp Note
